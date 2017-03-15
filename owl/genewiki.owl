@@ -50,137 +50,137 @@
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#biologicalVariantOf -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#biologicalVariantOf">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3433</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#drugUsedForTreatment -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#drugUsedForTreatment">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#medicalConditionTreated"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P2176</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#encodedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#encodedBy">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#encodes"/>
-        <database_cross_reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Property:P702</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#encodes -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#encodes">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P688</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon">
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P703</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#geneticAssociation -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#geneticAssociation">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <database_cross_reference rdf:resource="https://www.wikidata.org/wiki/Property:P2293"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#hasActiveIngredient -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#hasActiveIngredient"/>
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#medicalConditionTreated -->
+    <!-- https://www.wikidata.org/wiki/Property:P1057 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#medicalConditionTreated">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P2175</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#negativeDiagnosticPredictor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#negativeDiagnosticPredictor">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3357</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#negativePrognosticPredictor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#negativePrognosticPredictor">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3359</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#negativeTherapeuticPredictor -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#negativeTherapeuticPredictor">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3355</database_cross_reference>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome">
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P1057">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P1057</database_cross_reference>
+        <rdfs:label>chromosome</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#physicallyInteractsWith -->
+    <!-- https://www.wikidata.org/wiki/Property:P129 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#physicallyInteractsWith">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P129</database_cross_reference>
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P129">
+        <rdfs:label>physically interacts with</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#positiveDiagnosticPredictor -->
+    <!-- https://www.wikidata.org/wiki/Property:P2175 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#positiveDiagnosticPredictor">
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P2175">
+        <owl:inverseOf rdf:resource="https://www.wikidata.org/wiki/Property:P2176"/>
+        <rdfs:label>medical condition treated</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P2176 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P2176">
+        <rdfs:label>drug used for treatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P2293 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P2293">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3356</database_cross_reference>
+        <rdfs:label>genetic association</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#positivePrognisticPredictor -->
+    <!-- https://www.wikidata.org/wiki/Property:P3354 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#positivePrognisticPredictor">
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3354">
+        <rdfs:label>positive therapeutic predictor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3355 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3355">
+        <rdfs:label>negative therapeutic predictor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3356 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3356">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3358</database_cross_reference>
+        <rdfs:label>positive diagnostic predictor</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#positiveTherapeuticPredictor -->
+    <!-- https://www.wikidata.org/wiki/Property:P3357 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#positiveTherapeuticPredictor">
-        <database_cross_reference>https://www.wikidata.org/wiki/Property:P3354</database_cross_reference>
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3357">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>negative diagnostic predictor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3358 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3358">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>positive prognostic predictor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3359 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3359">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label>negative prognostic predictor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P3433 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P3433">
+        <rdfs:label>biological variant of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P688 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P688">
+        <owl:inverseOf rdf:resource="https://www.wikidata.org/wiki/Property:P702"/>
+        <rdfs:label>encodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P702 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P702">
+        <rdfs:label>encoded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.wikidata.org/wiki/Property:P703 -->
+
+    <owl:ObjectProperty rdf:about="https://www.wikidata.org/wiki/Property:P703">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
+        <rdfs:label>found in taxon</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -207,7 +207,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#medicalConditionTreated"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2175"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -226,43 +226,43 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#drugUsedForTreatment"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2176"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#ChemicalCompound"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#drugUsedForTreatment"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2176"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#PharmaceuticalProduct"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#geneticAssociation"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Gene"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#negativeDiagnosticPredictor"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3356"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Variant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#negativePrognosticPredictor"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3357"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Variant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#positiveDiagnosticPredictor"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3358"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Variant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#positivePrognisticPredictor"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3359"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Variant"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -281,38 +281,38 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#Gene">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#encodes"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Protein"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#geneticAssociation"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P1057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P688"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P703"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P1057"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P703"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Protein"/>
@@ -337,7 +337,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#medicalConditionTreated"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P2175"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -351,32 +351,32 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#ProteinFamily"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P1057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#physicallyInteractsWith"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P129"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#ChemicalCompound"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P703"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P1057"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P703"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Organism"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -394,32 +394,32 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#Variant">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#biologicalVariantOf"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3356"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3357"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3358"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3359"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P3433"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Gene"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#negativeDiagnosticPredictor"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#negativePrognosticPredictor"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#positiveDiagnosticPredictor"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#positivePrognisticPredictor"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Disease"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -451,20 +451,20 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Gene"/>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#encodes"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P688"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Protein"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#foundInTaxon"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P1057"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
             </owl:Restriction>
         </rdf:type>
         <rdf:type>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#onChromosome"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/genewiki/genewiki.owl#Chromosome"/>
+                <owl:onProperty rdf:resource="https://www.wikidata.org/wiki/Property:P703"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
