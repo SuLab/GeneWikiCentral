@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1489611766479" name="http://purl.obolibrary.org/gss/gss.owl" uri="genewiki.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489613136076" name="http://purl.obolibrary.org/genewiki/genewiki.owl" uri="genewiki.owl"/>
     </group>
 </catalog>

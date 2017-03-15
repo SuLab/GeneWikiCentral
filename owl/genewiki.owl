@@ -468,12 +468,6 @@
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/genewiki/genewiki.owl#humanTaxon -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/genewiki/genewiki.owl#humanTaxon"/>
 </rdf:RDF>
 
 
