@@ -1,0 +1,80 @@
+#graph_container {
+  display: table;
+}
+#row {
+  display: table-row;
+}
+#gene_div{
+  display: table-cell;
+  max-width: 50%;
+  padding-right: 5px;
+}
+#microbe_div{
+  display: table-cell;
+  max-width: 50%;
+  padding-right: 5px;
+}
+#protein_div{
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+}
+#compound_div{
+  display: table-cell;
+  padding-right: 5px;
+}
+#ontology_div{
+  display: table-cell;
+  padding-right: 5px;
+}
+#table_div{
+  padding-left: 10px;
+}
+#navcontainer {
+  max-width:750px;
+  margin:0 auto;
+  //background:#335eff top right repeat-y;
+}
+ul#navlist {
+  font-family: "Arial";
+  font-size: 14px;
+  text-align: center
+}
+ul#navlist li {
+  display:inline;
+  padding: 20px;
+}
+#genemod_div {
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+
+}
+#microbemod_div {
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+}
+#proteinmod_div {
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+}
+#drugmod_div {
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+}
+#diseasemod_div {
+  display: table-cell;
+  max-width:50%;
+  padding-right: 5px;
+}
+#jpie_div{
+  display: table-cell;
+  padding-right: 5px;
+}
+#jtable_div{
+  padding-left: 10px;
+  max-width:85%
+}

@@ -1,0 +1,487 @@
+extends report_base
+
+- load humanize
+
+block header
+    script.
+      $( function() {
+      $( "#tabs" ).tabs();
+      } );
+
+    script(type='text/javascript').
+      google.charts.load('current', {packages: ['corechart', 'line', 'table', 'bar']});
+      
+      //gene stacked bar
+      google.charts.setOnLoadCallback(gene_drawStacked);
+      function gene_drawStacked() {
+        var data = google.visualization.arrayToDataTable([ 
+          {% autoescape off %}
+          #{gene_clegend}
+          #{gene_cdata}
+          {% endautoescape %}
+        ]);
+
+        var options = {
+          title: 'Model Organism Gene Counts in Wikidata per Species',
+          width: 600,
+          height: 300,
+          legend: { position: 'top', maxLines: 2 },
+          bar: { groupWidth: '10%' },
+          isStacked: true
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('gene_div'));
+        chart.draw(data, options);
+      }
+
+      //microbe stacked bar
+      google.charts.setOnLoadCallback(microbe_drawStacked);
+      function microbe_drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+          {% autoescape off %}
+          #{microbe_clegend}
+          #{microbe_cdata}
+          {% endautoescape %}
+        ]);
+
+        var options = {
+          title: 'Microbial Genes Counts in Wikidata per Taxonomic Class',
+          width: 600,
+          height: 300,
+          legend: { position: 'top', maxLines: 2 },
+          bar: { groupWidth: '10%' },
+          isStacked: true
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('microbe_div'));
+        chart.draw(data, options);
+      }
+
+      //protein stacked bar
+      google.charts.setOnLoadCallback(protein_drawCrosshairs);
+      function protein_drawCrosshairs() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Date');
+        {% autoescape off %}
+        //#{protein_clegend}
+        {% endautoescape %}
+        data.addColumn('number', 'Protein Count');   //for testing
+        data.addRows([#{protein_cdata}]);              //for testing
+
+        var options = {
+          width: 600,
+          height: 300,
+          title: 'PLACE-HOLDER Proteins in Wikidata',
+          hAxis: {title: 'Query Date'},
+          vAxis: {title: 'Number of Proteins'},
+          crosshair: {color: '#000',trigger: 'selection'},
+          chartArea: {  width: "50%", height: "70%" }
+        };
+
+        var chart = new
+        google.visualization.LineChart(document.getElementById('protein_div'));
+
+        chart.draw(data, options);
+        chart.setSelection([{row: 38,column: 1}]);
+      }
+
+      //compound stacked bar
+      google.charts.setOnLoadCallback(compound_drawCrosshairs);
+      function compound_drawCrosshairs() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Date');
+        {% autoescape off %}
+        //#{compound_clegend}
+        {% endautoescape %}
+        data.addColumn('number', 'Compound Count');   //for testing
+        data.addRows([#{compound_cdata}]);              //for testing
+
+        var options = {
+          width: 600,
+          height: 300,
+          title: 'PLACE-HOLDER Compounds in Wikidata',
+          hAxis: {title: 'Query Date'},
+          vAxis: {title: 'Number of Compounds'},
+          crosshair: {color: '#000',trigger: 'selection'},
+          chartArea: {  width: "50%", height: "70%" }
+        };
+
+        var chart = new
+        google.visualization.LineChart(document.getElementById('compound_div'));
+
+        chart.draw(data, options);
+        chart.setSelection([{row: 38,column: 1}]);
+      }
+
+      //disease stacked bar
+      google.charts.setOnLoadCallback(disease_drawStacked);
+      function disease_drawStacked() {
+        var data = google.visualization.arrayToDataTable([
+          {% autoescape off %}
+          #{disease_clegend}
+          #{disease_cdata}
+          {% endautoescape %}
+        ]);
+
+        var options = {
+          title: 'Disease Ontology Counts in Wikidata per Source',
+          width: 600,
+          height: 300,
+          legend: { position: 'top', maxLines: 2 },
+          bar: { groupWidth: '10%' },
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('ontology_div'));
+        chart.draw(data, options);
+      }
+
+      //Counts table
+      google.charts.setOnLoadCallback(drawTable);
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Item');
+        data.addColumn('number', 'Count');
+        data.addColumn('string', 'SPARQL');
+        data.addRows([
+          {% autoescape off %}
+          #{tdata}
+          {% endautoescape %}
+        ])
+        data.setColumnProperty(2, {allowHtml: true});
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '50%', height: '50%', allowHtml: true});
+      }
+
+      //Jenkins bar chart for genes
+      google.charts.setOnLoadCallback(genemod_drawBasic);
+      function genemod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{genebar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Gene Bot',
+          width: 600,
+          height: 300,
+          chart: {
+            title: 'Wikidata Events Log',
+          },
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('genemod_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins bar chart for microbes
+      google.charts.setOnLoadCallback(microbemod_drawBasic);
+      function microbemod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jbar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Microbe Bot',
+          width: 600,
+          height: 300,
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number of items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('microbemod_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins bar chart for microbes
+      google.charts.setOnLoadCallback(microbemod_drawBasic);
+      function microbemod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jbar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Microbe Bot',
+          width: 600,
+          height: 300,
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number of items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('microbemod_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins bar chart for proteins
+      google.charts.setOnLoadCallback(proteinmod_drawBasic);
+      function proteinmod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jbar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Protein Bot',
+          width: 600,
+          height: 300,
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number of items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('proteinmod_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins bar chart for compounds
+      google.charts.setOnLoadCallback(drugmod_drawBasic);
+      function drugmod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jbar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Drug Bot',
+          width: 600,
+          height: 300,
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number of items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('drugmod_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins bar chart for disease
+      google.charts.setOnLoadCallback(diseasemod_drawBasic);
+      function diseasemod_drawBasic() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jbar}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title:  'Modifications By Disease Bot',
+          width: 600,
+          height: 300,
+          hAxis: {
+            minValue: 0,
+          },
+          bars: 'vertical',
+          axes: {
+            y: {
+              title: 'number of items',
+              0: {side: 'right'}
+            }
+          }
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('diseasemod_div'));
+
+        chart.draw(data, options);
+      }
+ 
+      //Jenkins Pie
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{jpie}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title: 'Types Of Errors That Occurred In The Last Month',
+          width: 600,
+          height: 300,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('jpie_div'));
+
+        chart.draw(data, options);
+      }
+
+      //Jenkins error table
+      google.charts.setOnLoadCallback(drawJtable);
+      function drawJtable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'bot');
+        data.addColumn('string', 'Error Classification');
+        data.addColumn('string', 'Error');
+        data.addColumn('string', 'Date');
+        data.addColumn('string', 'Item ID');
+        data.addRows([
+            {% autoescape off %}
+            #{jtable}
+            {% endautoescape %}
+        ]);
+        var table = new google.visualization.Table(document.getElementById('jtable_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+
+      //curration issue pie
+      google.charts.setOnLoadCallback(drawCchart);
+      function drawCchart() {
+
+        var data = google.visualization.arrayToDataTable([
+            {% autoescape off %}
+            #{cpie}
+            {% endautoescape %}
+        ]);
+
+        var options = {
+          title: 'Types Of Issues That Occurred In The Last Month',
+          width: 600,
+          height: 300,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('cpie_div'));
+
+        chart.draw(data, options);
+      }
+
+      //curation issues table
+      google.charts.setOnLoadCallback(drawCtable);
+      function drawCtable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'bot');
+        data.addColumn('string', 'Issue Classification');
+        data.addColumn('string', 'Issue');
+        data.addColumn('string', 'Date');
+        data.addColumn('string', 'Link');
+        data.addRows([
+            {% autoescape off %}
+            #{ctable}
+            {% endautoescape %}
+
+        ]);
+        var table = new google.visualization.Table(document.getElementById('ctable_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+ 
+
+block content
+   #tabs
+       ul#tab_list
+           li 
+               a(href='#tabs-1') Wikidata Overview
+           li
+               a(href='#tabs-2') Jenkins Reporting
+           li
+               a(href='#tabs-3') Curation Issues
+           li
+               a(href='#tabs-4') Network View
+       #tabs-1
+           #graph_container
+              #row
+                  #gene_div
+                      p Gene Chart
+                  #microbe_div
+                      p Microbe Chart
+                  br
+              #row
+                  #protein_div
+                      p Protein Chart
+                  #compound_div
+                      p Compound Chart
+                  br
+              #row
+                  #ontology_div
+                      p Ontology Chart
+              #row
+                  br
+           #table_div
+
+           #navcontainer
+              ul#navlist
+                  li
+                     a(href='https://www.wikidata.org/wiki/User:ProteinBoxBot') ProteinBoxBot
+                  li
+                     a(href='https://www.wikidata.org/wiki/User:MicrobeBot') MicrobeBot
+                  li
+                     a(href='https://www.wikidata.org/wiki/Wikidata:WikiProject_Molecular_biology') WikiProject Molecular biology
+       #tabs-2
+            #graph_container
+               #row
+                   #genemod_div
+                       p Gene Changes Barchart
+                   #microbemod_div
+                       p Microbe Changes Barchart
+                   br
+               #row
+                   #proteinmod_div
+                       p Protein Changes Barchart
+                   #drugmod_div
+                       p Drug Changes Barchart
+                   br
+               #row
+                   #diseasemod_div
+                       p Disease Changes Barchart
+                   br
+               #row
+                   #jpie_div
+                       p Error Overview Pie
+               #row
+                   br
+            #jtable_div
+       #tabs-3
+           #cpie_div
+           br
+           #ctable_div
+       #tabs-4
+           object(type='text/html', data='{{STATIC_URL}}web_session/index.html', width='1000px', height='800px', style='overflow:auto;')

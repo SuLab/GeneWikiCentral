@@ -1,0 +1,783 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.4.0",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "Wikidata",
+    "name" : "Wikidata",
+    "SUID" : 52,
+    "__Annotations" : [ "canvas=foreground|fontFamily=Arial|color=-16777216|x=19.0|y=10.0|zoom=2.294506666666667|z=-1|fontSize=12|text=|type=org.cytoscape.view.presentation.annotations.TextAnnotation|fontStyle=0|uuid=157b09c2-918e-45c8-92be-5053742b46b9" ],
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "74",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 132,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Active Site",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Active Site\n(132)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 74,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q423026",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q423026 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Active Site",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : 102.42080688476562,
+        "y" : -192.6764891460241
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "73",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 75,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Binding Site",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Binding Site\n(75)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 73,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q616005",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q616005 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Binding Site",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : 35.66748280954669,
+        "y" : -216.35587076711346
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "72",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 488,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Conserved Site",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Conserved Site\n(488)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 72,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q7644128",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q7644128 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Conserved Site",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : 106.70120768117596,
+        "y" : -84.463623046875
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "71",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 8440,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Protein Binding Domain",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Protein Binding Domain\n(8440)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 71,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q898273",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q898273 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Protein Binding Domain",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : -45.08015224191535,
+        "y" : -201.76502990722656
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "70",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 4,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "PTM",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "PTM\n(4)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 70,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q14633912",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q14633912 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "PTM",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : -110.79219654348505,
+        "y" : -161.77474975585938
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "69",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 215,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Repeat",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Repeat\n(215)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 69,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q417841",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q3273544 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Repeat",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : 133.5494842529297,
+        "y" : -145.1343476459681
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "68",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 19787,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "Protein Family",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "Protein Family\n(19787)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 68,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q3273544",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q417841 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "" ],
+        "name" : "Protein Family",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "" ]
+      },
+      "position" : {
+        "x" : -158.7604277446569,
+        "y" : -108.7326431274414
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "67",
+        "PSH_ID" : [ "5488" ],
+        "Freebase_ID" : [ "/m/0129f4" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 22083,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "4137599-3" ],
+        "ChEBI_ID" : [ "60003" ],
+        "has_nested_network" : false,
+        "shared_name" : "chemical compound",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "496071" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "chemical compound\n(22083)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 67,
+        "selected" : false,
+        "NDL_ID" : [ "00564454" ],
+        "wdid" : "Q11173",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "Chemical compounds" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P31 wd:Q11173 . }",
+        "BNCF_Thesaurus" : [ "790" ],
+        "instance_of" : [ "" ],
+        "name" : "chemical compound",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "chemical substance" ]
+      },
+      "position" : {
+        "x" : 94.62494328177162,
+        "y" : 85.19196751272867
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "66",
+        "PSH_ID" : [ "13082" ],
+        "Freebase_ID" : [ "/m/018l35" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 2130,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "4003115-9" ],
+        "ChEBI_ID" : [ "23888" ],
+        "has_nested_network" : false,
+        "shared_name" : "pharmaceutical drug",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "615.1" ],
+        "catName" : "pharmaceutical drug\n(2130)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 66,
+        "selected" : false,
+        "NDL_ID" : [ "00564334" ],
+        "wdid" : "Q12140",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "Pharmacologic agents" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P31 wd:Q12140 . }",
+        "BNCF_Thesaurus" : [ "846" ],
+        "instance_of" : [ "" ],
+        "name" : "pharmaceutical drug",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "drug" ]
+      },
+      "position" : {
+        "x" : 162.322998046875,
+        "y" : 4.268212293026956
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "65",
+        "PSH_ID" : [ "" ],
+        "Freebase_ID" : [ "/m/01cbjg" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 2158840,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "7755743-8" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "taxon",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "taxon\n(2158840)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 65,
+        "selected" : false,
+        "NDL_ID" : [ "" ],
+        "wdid" : "Q16521",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P31 wd:Q16521 . }",
+        "BNCF_Thesaurus" : [ "" ],
+        "instance_of" : [ "Wikidata metaclass" ],
+        "name" : "taxon",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "class" ]
+      },
+      "position" : {
+        "x" : -55.83346226370522,
+        "y" : -3.019498825073242
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "64",
+        "PSH_ID" : [ "6187" ],
+        "Freebase_ID" : [ "/m/05wvs", "/m/0qnstdx" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 379204,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "4076388-2" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "protein",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "protein\n(379204)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 64,
+        "selected" : false,
+        "NDL_ID" : [ "00572676" ],
+        "wdid" : "Q8054",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "11936447p" ],
+        "LCAuth_ID" : [ "sh85107666" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "Proteins" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q8054 . }",
+        "BNCF_Thesaurus" : [ "51" ],
+        "instance_of" : [ "" ],
+        "name" : "protein",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "biopolymer", "nutrient" ]
+      },
+      "position" : {
+        "x" : -28.777845085937802,
+        "y" : -72.68672943115234
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "63",
+        "PSH_ID" : [ "807" ],
+        "Freebase_ID" : [ "/m/0bscct" ],
+        "MeSH_ID" : [ "" ],
+        "Counts" : 606233,
+        "HDS_ID" : [ "" ],
+        "GND_ID" : [ "4128987-0" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "gene",
+        "MeSH_Code" : [ "" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "gene\n(606233)",
+        "TED_topic_ID" : [ "" ],
+        "SUID" : 63,
+        "selected" : false,
+        "NDL_ID" : [ "00563885" ],
+        "wdid" : "Q7187",
+        "AAT_ID" : [ "" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "science/gene" ],
+        "NCI_Thesaurus_ID" : [ "" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "gene" ],
+        "Commons_category" : [ "Genes" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q7187 . }",
+        "BNCF_Thesaurus" : [ "6576" ],
+        "instance_of" : [ "" ],
+        "name" : "gene",
+        "Disease_Ontology_ID" : [ "" ],
+        "subclass_of" : [ "nucleic acid sequence" ]
+      },
+      "position" : {
+        "x" : -174.50836453279885,
+        "y" : -39.753530232638006
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "62",
+        "PSH_ID" : [ "12578" ],
+        "Freebase_ID" : [ "/m/027x3" ],
+        "MeSH_ID" : [ "D004194" ],
+        "Counts" : 10660,
+        "HDS_ID" : [ "16312" ],
+        "GND_ID" : [ "4032844-2" ],
+        "ChEBI_ID" : [ "" ],
+        "has_nested_network" : false,
+        "shared_name" : "disease",
+        "MeSH_Code" : [ "C" ],
+        "OmegaWiki_Defined_Meaning" : [ "" ],
+        "Dewey_Decimal_Classification" : [ "" ],
+        "catName" : "disease\n(10660)",
+        "TED_topic_ID" : [ "disease" ],
+        "SUID" : 62,
+        "selected" : false,
+        "NDL_ID" : [ "00571210" ],
+        "wdid" : "Q12136",
+        "AAT_ID" : [ "300391457" ],
+        "Encyclop_dia_Britannica_Online_ID" : [ "" ],
+        "NCI_Thesaurus_ID" : [ "C2991" ],
+        "BnF_ID" : [ "" ],
+        "LCAuth_ID" : [ "" ],
+        "Stanford_Encyclopedia_of_Philosophy_ID" : [ "" ],
+        "Commons_category" : [ "Diseases and disorders" ],
+        "SPARQL_COUNT" : "SELECT DISTINCT ?entity WHERE { ?entity wdt:P279 wd:Q12136 . }",
+        "BNCF_Thesaurus" : [ "818" ],
+        "instance_of" : [ "" ],
+        "name" : "disease",
+        "Disease_Ontology_ID" : [ "DOID:4" ],
+        "subclass_of" : [ "health problem" ]
+      },
+      "position" : {
+        "x" : -125.98226928710938,
+        "y" : 76.66705984758956
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "93",
+        "source" : "74",
+        "target" : "64",
+        "shared_name" : "Active Site (interacts with) protein",
+        "name" : "Active Site (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 93,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "92",
+        "source" : "73",
+        "target" : "64",
+        "shared_name" : "Binding Site (interacts with) protein",
+        "name" : "Binding Site (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 92,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "91",
+        "source" : "72",
+        "target" : "64",
+        "shared_name" : "Conserved Site (interacts with) protein",
+        "name" : "Conserved Site (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 91,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "90",
+        "source" : "71",
+        "target" : "64",
+        "shared_name" : "Protein Binding Domain (interacts with) protein",
+        "name" : "Protein Binding Domain (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 90,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "89",
+        "source" : "70",
+        "target" : "64",
+        "shared_name" : "PTM (interacts with) protein",
+        "name" : "PTM (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 89,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "88",
+        "source" : "69",
+        "target" : "64",
+        "shared_name" : "Repeat (interacts with) protein",
+        "name" : "Repeat (interacts with) protein",
+        "interaction" : "has part (P527)",
+        "SUID" : 88,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "87",
+        "source" : "68",
+        "target" : "64",
+        "shared_name" : "Protein Family (interacts with) protein",
+        "name" : "Protein Family (interacts with) protein",
+        "interaction" : "subclass of (P279)",
+        "SUID" : 87,
+        "shared_interaction" : "interacts with",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "86",
+        "source" : "67",
+        "target" : "64",
+        "shared_name" : "chemical compound (interacts with) protein",
+        "name" : "chemical compound (interacts with) protein",
+        "interaction" : "Physically Interacts with (P129)",
+        "SUID" : 86,
+        "shared_interaction" : "Physically Interacts with (PP129)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "85",
+        "source" : "67",
+        "target" : "62",
+        "shared_name" : "chemical compound (interacts with) disease",
+        "name" : "chemical compound (interacts with) disease",
+        "interaction" : "Drugs used for Treatment (P2176)",
+        "SUID" : 85,
+        "shared_interaction" : "Drugs used for Treatment (P2176)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "84",
+        "source" : "67",
+        "target" : "66",
+        "shared_name" : "chemical compound (interacts with) pharmaceutical drug",
+        "name" : "chemical compound (interacts with) pharmaceutical drug",
+        "interaction" : ".",
+        "SUID" : 84,
+        "shared_interaction" : "instance of",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "83",
+        "source" : "66",
+        "target" : "64",
+        "shared_name" : "pharmaceutical drug (interacts with) protein",
+        "name" : "pharmaceutical drug (interacts with) protein",
+        "interaction" : "Physically interacts with (P129)",
+        "SUID" : 83,
+        "shared_interaction" : "Physically interacts with (p129)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "82",
+        "source" : "66",
+        "target" : "62",
+        "shared_name" : "pharmaceutical drug (interacts with) disease",
+        "name" : "pharmaceutical drug (interacts with) disease",
+        "interaction" : "Drugs used for Treatment (P2176)",
+        "SUID" : 82,
+        "shared_interaction" : "Drugs used for treatement (P22176)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "81",
+        "source" : "66",
+        "target" : "67",
+        "shared_name" : "pharmaceutical drug (interacts with) chemical compound",
+        "name" : "pharmaceutical drug (interacts with) chemical compound",
+        "interaction" : "Instance of (P31)",
+        "SUID" : 81,
+        "shared_interaction" : "Instance of (PP31)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "80",
+        "source" : "65",
+        "target" : "62",
+        "shared_name" : "taxon (interacts with) disease",
+        "name" : "taxon (interacts with) disease",
+        "interaction" : "Found in Taxon(P703)",
+        "SUID" : 80,
+        "shared_interaction" : "Found in Taxon(P703)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "79",
+        "source" : "65",
+        "target" : "63",
+        "shared_name" : "taxon (interacts with) gene",
+        "name" : "taxon (interacts with) gene",
+        "interaction" : "Found in Taxon (P703)",
+        "SUID" : 79,
+        "shared_interaction" : "Found in Taxon (P703)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "78",
+        "source" : "64",
+        "target" : "63",
+        "shared_name" : "protein (interacts with) gene",
+        "name" : "protein (interacts with) gene",
+        "interaction" : "Encoded by (P702)",
+        "SUID" : 78,
+        "shared_interaction" : "Encoded by (P702)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "77",
+        "source" : "63",
+        "target" : "64",
+        "shared_name" : "gene (interacts with) protein",
+        "name" : "gene (interacts with) protein",
+        "interaction" : "Encodes (P688)",
+        "SUID" : 77,
+        "shared_interaction" : "",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "76",
+        "source" : "63",
+        "target" : "62",
+        "shared_name" : "gene (interacts with) disease",
+        "name" : "gene (interacts with) disease",
+        "interaction" : ".",
+        "SUID" : 76,
+        "shared_interaction" : "Genetic Association (P2293)",
+        "selected" : false
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "75",
+        "source" : "62",
+        "target" : "63",
+        "shared_name" : "disease (interacts with) gene",
+        "name" : "disease (interacts with) gene",
+        "interaction" : "Genetic Association (P2293)",
+        "SUID" : 75,
+        "shared_interaction" : "Genetic Association (P2293)",
+        "selected" : false
+      },
+      "selected" : false
+    } ]
+  }
+}
