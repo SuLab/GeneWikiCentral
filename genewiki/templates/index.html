@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="no-js"></html><!--[if IE 8]><html class='no-js lt-ie9' lang='en' > <![endif]-->
+<!--[if gt IE 8]><!--> <html class='no-js' lang='en' > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genewiki</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/report_style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'js/libs/jquery-ui-1.12.0.custom/jquery-ui.css' %}">
+  <script src="{% static 'js/libs/jquery-ui-1.12.0.custom/external/jquery/jquery.js' %}"></script>
+  <script src="{% static 'js/libs/jquery-ui-1.12.0.custom/jquery-ui.js' %}"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+
+<script>$( function() {
+$( "#tabs" ).tabs();
+} );
+
+</script>
+
+<div id="tabs">
+  <ul id="tab_list">
+    <li><a href="#tabs-1">Network View</a>
+    </li>
+    <li><a href="#tabs-2">About Network</a>
+    </li>
+  </ul>
+  <div id="tabs-1">
+      <object type="text/html" data="{% static 'cytoscape/network.html' %}" width="1000px" height="800px" style="overflow:auto;"></object>
+  </div>
+  <div id="tabs-2">
+  </div>
+</body>
+</html>

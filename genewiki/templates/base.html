@@ -1,0 +1,45 @@
+<!DOCTYPE html> {% load static %}
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Genewiki{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ladda.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block pre-footer %}{% endblock %}
+    {% block footer %}
+        <script src="{% static 'js/libs/jquery-2.1.1.min.js' %}"></script>
+        <script src="{% static 'js/libs/underscore-min.js' %}"></script>
+        <script src="{% static 'js/libs/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/libs/d3.v3.min.js' %}"></script>
+        <script src="{% static 'js/libs/spin.min.js' %}"></script>
+        <script src="{% static 'js/libs/ladda.min.js' %}"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+        {% if not debug %}
+            <script>
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create','UA-XXXXXXXX-X');ga('send','pageview');
+            </script>  
+        {% endif %}
+    {% endblock %}
+    {% block post-footer %}{% endblock %}
+
+</body>
+</html>

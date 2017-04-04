@@ -1,0 +1,39 @@
+body { 
+  font: 40px helvetica neue, helvetica, arial, sans-serif;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+   /*background-color: #dddddd;*/
+}
+
+#cy {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#qtip-growl-container{
+  position: fixed;
+  top: 10px; right: 10px;
+}
+#qtip-growl-container .qtip{
+  position: static;
+  min-height: 0;
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
