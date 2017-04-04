@@ -59,7 +59,7 @@ def article_create(request, entrez_id):
 
         return redirect('genewiki.wiki.views.article_create', entrez_id)
 
-    return render(request, 'wiki/create.jade', vals)
+    return render(request, 'wiki/create.html', vals)
 
 
 def wiki_title(entrez_id):

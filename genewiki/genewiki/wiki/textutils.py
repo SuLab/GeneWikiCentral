@@ -1,7 +1,7 @@
 from django.conf import settings
-from django.db import models
 
-import re, copy, json, datetime, urllib.request, urllib.parse, urllib.error, html.parser, mygene
+
+import re, copy, json, datetime, urllib.request, urllib.parse, urllib.error, html, mygene
 import xml.etree.ElementTree as etree
 
 from wikidataintegrator import wdi_core, wdi_login, wdi_settings, wdi_helpers
@@ -92,8 +92,7 @@ def create_stub(gene_id):
         citations = citations + '*' + dict['content'] + '\n'
 
     # replace encoded accents in names
-    h = html.parser.HTMLParser()
-    values['citations'] = h.unescape(citations)
+    values['citations'] = html.unescape(citations)
 
     stub = settings.STUB_SKELETON.format(**values)
     return stub
@@ -142,7 +141,7 @@ def create(entrez, force=False):
         # Generate the Stub code if the Page (for any of the possible names) isn't on Wikipedia
         if not (titles['name'][1] or titles['symbol'][1] or titles['altsym'][1]) or force:
             results['stub'] = create_stub(entrez)
-
+        
         return results
 
 

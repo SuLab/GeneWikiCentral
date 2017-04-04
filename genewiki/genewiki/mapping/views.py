@@ -1,18 +1,8 @@
 from django.shortcuts import redirect
 from django.conf import settings
-
-from rest_framework import viewsets
-from genewiki.mapping.models import Relationship, Lookup
-from genewiki.mapping.serializers import RelationshipSerializer
-
 from wikidataintegrator import wdi_core, wdi_login, wdi_helpers
 
-class RelationshipViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows users to be viewed or edited.
-    """
-    queryset = Relationship.objects.all()
-    serializer_class = RelationshipSerializer
+
 
 
 def wiki_mapping(request, entrez_id):

@@ -42,17 +42,6 @@ class Bot(models.Model):
         for item in lists:
             print((item['title']))
 
-    def fetch_update_articles(self):
-        connection = self.connection()
-        gpb = connection.Pages['Template:GNF_Protein_box']
-        for page in gpb.embeddedin('10'):
-            if 'Template:PBB/' in page.name:
-                article, created = Article.objects.get_or_create(title=page.name, article_type=Article.INFOBOX)
-                article.text = page.edit()
-                article.save()
-                if created:
-                    logger.info('Article Added', exc_info=True, extra={'article': article, 'title': page.name})
-
     def __unicode__(self):
         return '{0} ({1})'.format(self.username, self.service_type)
 
@@ -71,7 +60,7 @@ class Article(models.Model):
         (TEMPLATE, 'Template'),
         (TALK, 'Talk page'),
     )
-    article_type = models.IntegerField(max_length=1, choices=ARTICLE_TYPE_CHOICE, blank=True, default=PAGE)
+    article_type = models.IntegerField(choices=ARTICLE_TYPE_CHOICE, blank=True, default=PAGE)
 
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
