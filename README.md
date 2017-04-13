@@ -17,3 +17,8 @@ https://github.com/SuLab/wdbiothings
 This repo contains a reusable module for reading from and writing to Wikidata
 
 https://github.com/SuLab/wikidataintegrator
+
+### wikidatasparqlexamples
+Example SPARQL queries that demonstrate integrative potential of Wikidata
+
+https://github.com/SuLab/wikidatasparqlexamples
