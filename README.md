@@ -12,3 +12,8 @@ https://github.com/SuLab/scheduled-bots
 This is the repo for data sources that are updated through the Biothings.api
 
 https://github.com/SuLab/wdbiothings
+
+### wikidataintegrator
+This repo contains a reusable module for reading from and writing to Wikidata
+
+https://github.com/SuLab/wikidataintegrator
