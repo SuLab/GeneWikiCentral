@@ -3,13 +3,13 @@ from django.views.decorators.http import require_http_methods
 from django.http import HttpResponse
 from django.conf import settings
 
-from genewiki.wiki.models import Article
+
 
 from genewiki.wiki.textutils import create, interwiki_link
 
-import urllib.parse
+import urllib.parse, mwclient
 
-from wikidataintegrator import wdi_core, wdi_login, wdi_helpers
+from wikidataintegrator import wdi_core, wdi_login, wdi_helpers, wdi_settings
 
 @require_http_methods(['GET', 'POST'])
 def article_create(request, entrez_id):
@@ -20,11 +20,10 @@ def article_create(request, entrez_id):
         return HttpResponse('Invalid or missing Entrez Identifier')
 
     titles = results.get('titles')
-    article = Article.objects.get_infobox_for_entrez(entrez_id)
     title = wiki_title(entrez_id)
 
     vals = {'results': results,
-            'article': article,
+            #'article': article,
             'titles': titles,
             'title': title,
             'entrez': entrez_id}
@@ -43,21 +42,21 @@ def article_create(request, entrez_id):
 
         vals['title'] = title
         content = results['stub']
-        Article.objects.get_or_create(title=title, text=content, article_type=Article.PAGE, force_update=True)
 
+        write(vals['title'],content)
         # create corresponding talk page with appropriate project banners
         talk_title = 'Talk:{0}'.format(title)
         talk_content = """{{WikiProjectBannerShell|
                           {{WikiProject Gene Wiki|class=stub|importance=low}}
                           {{Wikiproject MCB|class=stub|importance=low}}
                           }}"""
-        Article.objects.get_or_create(title=talk_title, text=talk_content, article_type=Article.TALK, force_update=True)
+        write(talk_title, talk_content)
         # create interwiki link
         interwiki_link(entrez_id, title)
         # save article again
-        Article.objects.get_or_create(title=title, text=content, article_type=Article.PAGE, force_update=True)
+        write(vals['title'],content)
+        return redirect(article_create, entrez_id)
 
-        return redirect('genewiki.wiki.views.article_create', entrez_id)
 
     return render(request, 'wiki/create.html', vals)
 
@@ -86,3 +85,18 @@ def wiki_title(entrez_id):
             str_title = urllib.parse.unquote(title[-1])
             return str_title
 
+def write(title, text, summary=None):
+    '''
+        Writes the wikitext representation of the created page to wikipedia
+    '''
+    username = wdi_settings.getWikiDataUser()
+    password = wdi_settings.getWikiDataPassword()
+    site = mwclient.Site(('https', 'en.wikipedia.org'))
+    site.login(username, password)
+    page = site.Pages[title]
+
+    try:
+        result = page.save(text, summary, minor=True)
+
+    except MwClientError:
+        client.captureException
