@@ -1,0 +1,188 @@
+
+        
+{
+    "edges": [
+        [
+            {
+                "data": {
+                    "count": "",
+                    "enname": "post-translational protein modification'cellular protein modification process",
+                    "id": "Q14633912'Q14863042",
+                    "label": "subclass of",
+                    "propid": "P279",
+                    "qualifier": "",
+                    "refprop": "",
+                    "source": "Q14633912",
+                    "target": "Q14863042"
+                }
+            },
+            {
+                "data": {
+                    "count": "",
+                    "enname": "post-translational protein modification'cellular protein metabolic process",
+                    "id": "Q14633912'Q14633914",
+                    "label": "part of",
+                    "propid": "P361",
+                    "qualifier": "",
+                    "refprop": "",
+                    "source": "Q14633912",
+                    "target": "Q14633914"
+                }
+            }
+        ],
+        [
+            {
+                "data": {
+                    "count": "",
+                    "enname": "Binding site'protein",
+                    "id": "Q616005'Q8054",
+                    "label": "instance of",
+                    "propid": "P31",
+                    "qualifier": "",
+                    "refprop": "",
+                    "source": "Q616005",
+                    "target": "Q8054"
+                }
+            }
+        ]
+    ],
+    "nodes": [
+        {
+            "data": {
+                "count": "4",
+                "id": "Q14633912",
+                "label": "post-translational protein modification",
+                "properties": {
+                    "P279": {
+                        "direction": "outgoing",
+                        "pLabel": "subclass of",
+                        "target": {
+                            "Q14863042": "cellular protein modification process",
+                            "Q22284211": "protein acylation"
+                        }
+                    },
+                    "P2888": {
+                        "direction": "outgoing",
+                        "pLabel": "exact match"
+                    },
+                    "P361": {
+                        "direction": "outgoing",
+                        "pLabel": "part of",
+                        "target": {
+                            "Q14633914": "cellular protein metabolic process",
+                            "Q14864993": "protein maturation"
+                        }
+                    },
+                    "P527": {
+                        "direction": "outgoing",
+                        "pLabel": "has part",
+                        "target": {
+                            "Q14912987": "transferase activity, transferring acyl groups other than amino-acyl groups"
+                        }
+                    },
+                    "P686": {
+                        "direction": "outgoing",
+                        "pLabel": "Gene Ontology ID"
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "count": "75",
+                "id": "Q616005",
+                "label": "Binding site",
+                "properties": {
+                    "P2926": {
+                        "direction": "outgoing",
+                        "pLabel": "InterPro ID"
+                    },
+                    "P31": {
+                        "direction": "outgoing",
+                        "pLabel": "instance of",
+                        "target": {
+                            "Q8054": "protein"
+                        }
+                    },
+                    "P361": {
+                        "direction": "outgoing",
+                        "pLabel": "part of",
+                        "target": {
+                            "Q11269508": "Voltage-gated potassium channel",
+                            "Q24719927": "Tyrosine-protein kinase, neurotrophic receptor",
+                            "Q24720353": "Acyl-CoA desaturase",
+                            "Q24721848": "Phosphoinositide phospholipase C family",
+                            "Q24721965": "M16 peptidase-like",
+                            "Q24722163": "Tyrosine 3-monooxygenase-like",
+                            "Q24722342": "glucanase domain",
+                            "Q24723173": "classII",
+                            "Q24723594": "GAF domain",
+                            "Q24724627": "Voltage gated sodium channel, alpha-4 subunit",
+                            "Q24724753": "adenylylsulphate reductase,  flavoprotein subunit",
+                            "Q24724794": "Cytidine deaminase-like",
+                            "Q24726164": "Protein kinase-like domain",
+                            "Q24726989": "Tyk2",
+                            "Q24727530": "Recoverin family",
+                            "Q24739547": "Protoglobin",
+                            "Q24740842": "tyrosine-protein kinase catalytic domain",
+                            "Q24740996": "MLK4",
+                            "Q24742069": "EF-hand domain pair",
+                            "Q24767888": "ATP synthase, F0 complex, subunit C",
+                            "Q24768234": "Protein kinase domain",
+                            "Q24769258": "fungal rhodopsins",
+                            "Q24769456": "isopropylmalate dehydratase",
+                            "Q24771177": "Inositol monophosphatase-like",
+                            "Q24771324": "Beta-grasp domain",
+                            "Q24771424": "Voltage gated sodium channel, alpha subunit",
+                            "Q24771478": "Haemerythrin-like",
+                            "Q24772015": "Cupredoxin",
+                            "Q24773524": "Ureohydrolase",
+                            "Q24773605": "Haem peroxidase",
+                            "Q24773790": "fumarate reductase, flavoprotein subunit",
+                            "Q24774044": "Peptidase M10A",
+                            "Q24774462": "Globin-like",
+                            "Q24775011": "Pyridoxal phosphate-dependent decarboxylase",
+                            "Q24775142": "Protein kinase Mps1 family",
+                            "Q24775785": "Cysteine synthase",
+                            "Q24775905": "Transketolase family",
+                            "Q24775968": "Metallothionein",
+                            "Q24776069": "FAD-binding, type 2",
+                            "Q24776163": "Protein phosphatase 2C family",
+                            "Q24776401": "Thr protein kinase, TGFB receptor",
+                            "Q24776405": "RmlC-like cupin domain",
+                            "Q24777064": "PLP-binding barrel",
+                            "Q24777314": "Aromatic amino acid hydroxylase",
+                            "Q24777474": "RmlC-like jelly roll fold",
+                            "Q24777942": "nicotianamine aminotransferase",
+                            "Q24778859": "Eukaryotic molybdopterin oxidoreductase",
+                            "Q24779306": "Phytochrome",
+                            "Q24779692": "Bacillus mosquitocidal toxin MTX2",
+                            "Q24780817": "Phenol hydroxylase reductase",
+                            "Q24781248": "Pyridoxal phosphate-dependent transferase",
+                            "Q24781762": "Small GTPase superfamily",
+                            "Q24782226": "Glycine cleavage system H-protein",
+                            "Q24782346": "Lipoxygenase",
+                            "Q24782804": "6-phosphogluconate dehydrogenase",
+                            "Q24783111": "Adrenodoxin",
+                            "Q24783440": "Peptidase M24, methionine aminopeptidase",
+                            "Q24783929": "Cytidine deaminase, homodimeric",
+                            "Q24784594": "GAF domain-like",
+                            "Q24785110": "3-isopropylmalate dehydratase, large subunit, prokaryotic",
+                            "Q24785330": "xanthine dehydrogenase",
+                            "Q24785772": "DNA polymerase family X",
+                            "Q24786376": "3-isopropylmalate dehydratase, large subunit",
+                            "Q24787094": "Cysteine desulfurase",
+                            "Q24787136": "Potassium channel, voltage dependent, KCNQ",
+                            "Q24788156": "NiFe hydrogenase-like",
+                            "Q24788317": "type-B",
+                            "Q27185048": "Simiate",
+                            "Q27185358": "xylene monooxygenase",
+                            "Q424960": "sodium channel",
+                            "Q6804689": "Mechanosensitive ion channel MscS"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

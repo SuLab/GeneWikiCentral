@@ -1,0 +1,95 @@
+{
+    "node": [
+        {
+            "data": {
+                "count": "617726",
+                "id": "Q7187",
+                "label": "gene"
+            }
+        },
+        {
+            "data": {
+                "count": "435828",
+                "id": "Q8054",
+                "label": "protein"
+            }
+        },
+        {
+            "data": {
+                "count": "2206209",
+                "id": "Q16521",
+                "label": "taxon"
+            }
+        },
+        {
+            "data": {
+                "count": "8967",
+                "id": "Q12136",
+                "label": "disease"
+            }
+        },
+        {
+            "data": {
+                "count": "157378",
+                "id": "Q11173",
+                "label": "chemical compound"
+            }
+        },
+        {
+            "data": {
+                "count": "132",
+                "id": "Q423026",
+                "label": "active site"
+            }
+        },
+        {
+            "data": {
+                "count": "75",
+                "id": "Q616005",
+                "label": "Binding site"
+            }
+        },
+        {
+            "data": {
+                "count": "8900",
+                "id": "Q898273",
+                "label": "protein domain"
+            }
+        },
+        {
+            "data": {
+                "count": "4",
+                "id": "Q14633912",
+                "label": "post-translational protein modification"
+            }
+        },
+        {
+            "data": {
+                "count": "20207",
+                "id": "Q417841",
+                "label": "protein family"
+            }
+        },
+        {
+            "data": {
+                "count": "2496",
+                "id": "Q12140",
+                "label": "pharmaceutical drug"
+            }
+        },
+        {
+            "data": {
+                "count": "686",
+                "id": "Q7644128",
+                "label": "Supersecondary structure"
+            }
+        },
+        {
+            "data": {
+                "count": "286",
+                "id": "Q3273544",
+                "label": "Structural motif"
+            }
+        }
+    ]
+}

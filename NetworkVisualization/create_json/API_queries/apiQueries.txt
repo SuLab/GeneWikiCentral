@@ -1,0 +1,5 @@
+1. Get claims for list of Qids
+https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q414043|Q17910011&languages=en
+2. Differentiate properties that occurred from one Qid and another that are the same and store a count
+3. Given list of properties find the label
+https://www.wikidata.org/w/api.php?action=wbgetentities&ids=P31|P279&props=labels&languages=en

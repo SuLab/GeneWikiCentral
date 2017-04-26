@@ -1,0 +1,403 @@
+{
+	"nodes": [{
+		"data": {
+                "count": "617726",
+                "id": "Q7187",
+                "label": "gene"
+            }
+        },
+        {
+            "data": {
+                "count": "435828",
+                "id": "Q8054",
+                "label": "protein"
+            }
+        },
+        {
+            "data": {
+                "count": "2206209",
+                "id": "Q16521",
+                "label": "taxon"
+            }
+        },
+        {
+            "data": {
+                "count": "8967",
+                "id": "Q12136",
+                "label": "disease"
+            }
+        },
+        {
+            "data": {
+                "count": "157378",
+                "id": "Q11173",
+                "label": "chemical compound"
+            }
+        },
+        {
+            "data": {
+                "count": "132",
+                "id": "Q423026",
+                "label": "active site"
+            }
+        },
+        {
+            "data": {
+                "count": "75",
+                "id": "Q616005",
+                "label": "Binding site"
+            }
+        },
+        {
+            "data": {
+                "count": "8900",
+                "id": "Q898273",
+                "label": "protein domain"
+            }
+        },
+        {
+            "data": {
+                "count": "4",
+                "id": "Q14633912",
+                "label": "post-translational protein modification",
+                "properties": {
+                    "P361": {
+                        "direction": "outgoing",
+                        "objectcount": 1,
+                        "plabel": "part of",
+                        "target": {
+                            "Q21106457": {
+                    	        "label": "cellular protein metabolic process",
+                                "objectcount": 1,
+                                "subjectcount": 1
+                             },
+                            "Q14864993": {
+                                "label": "protein maturation",
+                                "objectcount": 1,
+                                "subjectcount": 1 
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "count": "20207",
+                "id": "Q417841",
+                "label": "protein family"
+            }
+        },
+        {
+            "data": {
+                "count": "2496",
+                "id": "Q12140",
+                "label": "pharmaceutical drug"
+            }
+        },
+        {
+            "data": {
+                "count": "686",
+                "id": "Q7644128",
+                "label": "Supersecondary structure"
+            }
+        },
+        {
+            "data": {
+                "count": "286",
+                "id": "Q3273544",
+                "label": "Structural motif"
+            }
+
+	}],
+
+	"edges": [{
+		"data": {
+			"id": "Q7187'Q8054",
+			"enname": "gene'protein",
+			"source": "Q7187",
+			"target": "Q8054",
+			"label": "Encodes",
+                        "propid": "P688",
+                        "count": "10",
+                        "qualifierProperties": {
+                                            "determination method":{
+				                                   "id":"P459",
+                                                                   "count":"10"
+                                                                   }                    
+                        },
+                        "referenceProperties":{
+                                             "reference URL":{
+                                                             "id":"P854",
+                                                             "count": "10"
+                                                             },
+                                             "stated in": {
+                                                             "id":"P248",
+                                                             "count": "10"
+                                                             },
+                                             "imported from": {
+                                                             "id":"P143",
+                                                             "count": "10"
+                                                             },
+                                             "retrieved": {
+                                                             "id":"P854",
+                                                             "count": "10"
+                                                             }
+
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q14633912'Q8054",
+			"enname": "PTM'protein",
+			"source": "Q14633912",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q3273544'Q8054",
+			"enname": "protein family'protein",
+			"source": "Q3273544",
+			"target": "Q8054",
+			"label": "subclass of",
+                        "propid": "P279",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q7644128'Q8054",
+			"enname": "conserved site'protein",
+			"source": "Q7644128",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q12140'Q8054",
+			"enname": "pharmaceutical drug'protein",
+			"source": "Q12140",
+			"target": "Q8054",
+			"label": "physically interacts with",
+                        "propid": "P129",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q417841'Q8054",
+			"enname": "repeat'protein",
+			"source": "Q417841",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q898273'Q8054",
+			"enname": "protein binding'protein",
+			"source": "Q898273",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q616005'Q8054",
+			"enname": "binding site'protein",
+			"source": "Q616005",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q423026'Q8054",
+			"enname": "active site'protein",
+			"source": "Q423026",
+			"target": "Q8054",
+			"label": "has part",
+                        "propid": "P527",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q11173'Q8054",
+			"enname": "chemical compound'protein",
+			"source": "Q11173",
+			"target": "Q8054",
+			"label": "physically interacts with",
+                        "propid": "P129",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q8054'Q7187",
+			"enname": "protein'gene",
+			"source": "Q8054",
+			"target": "Q7187",
+			"label": "endoded by",
+                        "propid": "P702",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q12136'Q7187",
+			"enname": "disease'gene",
+			"source": "Q12136",
+			"target": "Q7187",
+			"label": "genetic association",
+                        "propid": "P2293",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q16521'Q7187",
+			"enname": "taxon'gene",
+			"source": "Q16521",
+			"target": "Q7187",
+			"label": "found in taxon",
+                        "propid": "P703",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q7187'Q12136",
+			"enname": "gene'disease",
+			"source": "Q7187",
+			"target": "Q12136",
+			"label": "genetic association",
+                        "propid": "P2293",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q12140'Q12136",
+			"enname": "pharmaceutical drug'disease",
+			"source": "Q12140",
+			"target": "Q12136",
+			"label": "drugs used for treatment",
+                        "propid": "P2176",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q11173'Q12136",
+			"enname": "chemical compound'disease",
+			"source": "Q11173",
+			"target": "Q12136",
+			"label": "drugs used for treatment",
+                        "propid": "P2176",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q16521'Q12136",
+			"enname": "taxon'disease",
+			"source": "Q16521",
+			"target": "Q12136",
+			"label": "found in taxon",
+                        "propid": "P703",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q12140'Q11173",
+			"enname": "pharmaceutical drug'chemical compound",
+			"source": "Q12140",
+			"target": "Q11173",
+			"label": "instance of",
+                        "propid": "P31",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+	}, {
+		"data": {
+			"id": "Q11173'Q12140",
+			"enname": "chemical compound'pharmaceutical drug",
+			"source": "Q11173",
+			"target": "Q12140",
+			"label": "instance of",
+                        "propid": "P31",
+                        "count": "10",
+                        "qualifierProperties": {                   
+                        },
+                        "referenceProperties":{
+                        }
+		}
+
+	}]
+}

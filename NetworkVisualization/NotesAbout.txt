@@ -1,0 +1,10 @@
+TO Future programmer:
+
+This project contains the cytoscape.js interface as well as code to generate the json file by querying wikidata.
+To edit the interface code use the code.js file.  
+
+To create the json file:
+createjson_allquery_nocounts.py- this still needs further optimization to run on the local instance of wikidata and some formating to get the edge data to print correctly to the output json file.  
+Included in the create_json directory is a list of queries that are used for this project as well as queries that I planned to add to this project. Toward the end of the file are queries for getting information for the egdes that is not yet implemented.  
+
+  
