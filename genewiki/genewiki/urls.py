@@ -19,7 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^grappelli/', include('grappelli.urls')),
-    url(r'', include('genewiki.report.urls')),
+    url(r'^$', include('genewiki.report.urls')),
     url(r'^map/', include('genewiki.mapping.urls')),
     url(r'^wiki/', include('genewiki.wiki.urls'))
 ]
