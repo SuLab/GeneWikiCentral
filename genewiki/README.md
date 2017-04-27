@@ -39,3 +39,18 @@ from GeneWikiCentral/genewiki run
 
 $ uwsgi --socket :8001 --module genewiki.wsgi
 
+If IP changes you need to:
+
+1. added to allowed hosts in the settings.py file
+
+2. add IP to server_name in the genewiki_nginx.conf file
+
+3. restart wsgi and restart nginx
+
+sudo /etc/init.d/nginx restart
+
+sudo fuser -k 8001/tcp
+
+uwsgi --socket :8001 --module genewiki.wsgi
+
+
