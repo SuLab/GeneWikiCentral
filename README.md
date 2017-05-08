@@ -22,3 +22,9 @@ https://github.com/SuLab/wikidataintegrator
 Example SPARQL queries that demonstrate integrative potential of Wikidata
 
 https://github.com/SuLab/wikidatasparqlexamples
+
+
+### wikigenomes.org
+Web application for viewing and annotating microbial genome data in Wikidata
+
+http://wikigenomes.org/
