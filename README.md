@@ -4,7 +4,7 @@ GeneWiki Organization
 
 ## Relevant Repos
 ### Scheduled Bots
-This is the repo for the bots that are running on [Jenkins](http://34.193.174.196:8080)
+This is the repo for the bots that are running on [Jenkins](http://52.15.200.208:8080)
 
 * https://github.com/SuLab/scheduled-bots
 
