@@ -1,9 +1,10 @@
 from django.shortcuts import redirect
 from django.conf import settings
+from django.urls import reverse
 from wikidataintegrator import wdi_core, wdi_login, wdi_helpers
-
-
-
+import sys 
+sys.path.append('/home/ubuntu/GeneWikiCentral/genewiki')
+from genewiki.wiki.views import article_create
 
 def wiki_mapping(request, entrez_id):
     article_query = """
@@ -22,9 +23,10 @@ def wiki_mapping(request, entrez_id):
     article = ''
     for x in wikidata_results:
         article = x['article']['value']
-    
     if wikidata_results:
+        print('article found')
         return redirect(article)
     else:
-        return redirect('genewiki.wiki.views.article_create', entrez_id)
-
+        print('no article found')
+        return redirect(article_create, entrez_id)
+        #return redirect('genewiki.wiki.views.article_create', entrez_id)

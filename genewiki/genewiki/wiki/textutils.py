@@ -5,7 +5,7 @@ import re, copy, json, datetime, urllib.request, urllib.parse, urllib.error, htm
 import xml.etree.ElementTree as etree
 
 from wikidataintegrator import wdi_core, wdi_login, wdi_settings, wdi_helpers
-
+from genewiki import pbb_secret
 citation_tool_url = "http://tools.wmflabs.org/citation-template-filling/cgi-bin/index.cgi?ddb=&type=pubmed_id&id=%s&format=xml"
 
 
@@ -86,9 +86,9 @@ def create_stub(gene_id):
         for group in root:
             for elem in group:
                 dict[elem.tag] = elem.text
-                print(elem.tag)
-                print(elem.text)
-        print(dict['content'])
+                #print(elem.tag)
+                #print(elem.text)
+        #print(dict['content'])
         citations = citations + '*' + dict['content'] + '\n'
 
     # replace encoded accents in names
@@ -109,19 +109,14 @@ def create(entrez, force=False):
         return None
 
     # Query wikidata for existance of entrez_id don't create new pages for entrez_ids not in wikidata
-
-    entrez_query = """
-        SELECT ?entrez_id  WHERE {
-        ?cid wdt:P351 ?entrez_id  .
-        FILTER(?entrez_id ='""" + str(entrez) + """') .
-    }
-    """
-
+    entrez_query = """SELECT ?entrez_id  WHERE { ?cid wdt:P351  '%s'; wdt:P351 ?entrez_id.}""" % (str(entrez))
     wikidata_results = wdi_core.WDItemEngine.execute_sparql_query(prefix=settings.PREFIX, query=entrez_query)['results']['bindings']
     entrez_id = ''
     for x in wikidata_results:
         entrez_id = x['entrez_id']['value']
+        print('entrez_query found {}'.format(str(entrez_id)))
     if entrez_id != str(entrez):
+        print('entrez_query not found')
         return None
     else:
         # Dictionary of each title key and tuple of it's (STR_NAME, IF_CREATED_ON_WIKI)
@@ -147,22 +142,15 @@ def create(entrez, force=False):
 
 def interwiki_link(entrez, name):
     # Query wikidata for Q-item id (cid)
-
-    cid_query = """
-        SELECT ?cid  WHERE {
-        ?cid wdt:P351 ?entrez_id  .
-        FILTER(?entrez_id ='""" + str(entrez) + """') .
-    }
-    """
-
+    cid_query = """SELECT ?cid  WHERE { ?cid wdt:P351  '%s'.}""" % (str(entrez))
     wikidata_results = wdi_core.WDItemEngine.execute_sparql_query(prefix=settings.PREFIX, query=cid_query)['results']['bindings']
     cid = ''
     for x in wikidata_results:
         cid = x['cid']['value'].split('/')[-1]
-
+        print('cid_query found {}'.format(str(cid)))
     # create interwiki link
-    username = wdi_settings.getWikiDataUser()
-    password = wdi_settings.getWikiDataPassword()
+    username = pbb_secret.username
+    password = pbb_secret.password
     # create your login object with your user and password (or the ProteinBoxBot account?)
     login_obj = wdi_login.WDLogin(user=username, pwd=password)
     # load the gene Wikidata object
@@ -209,7 +197,6 @@ def restore_references(wikitext, references, salt):
       the reference location remains intact.
 
       Arguments:
-        - `wikitext`: wikitext where the references have been stripped
         - `references`: a list of references in order of removal
         - `salt`: the unique salt used to replace the references
     '''

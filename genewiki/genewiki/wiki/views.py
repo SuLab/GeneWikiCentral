@@ -2,18 +2,19 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_http_methods
 from django.http import HttpResponse
 from django.conf import settings
-
+from pprint import pprint
+from django.views.decorators.clickjacking import xframe_options_exempt
 
 
 from genewiki.wiki.textutils import create, interwiki_link
-
+from genewiki import pbb_secret
 import urllib.parse, mwclient
 
 from wikidataintegrator import wdi_core, wdi_login, wdi_helpers, wdi_settings
 
 @require_http_methods(['GET', 'POST'])
+@xframe_options_exempt
 def article_create(request, entrez_id):
-
     results = create(entrez_id)
     # We failed to gather information then return the ID error
     if results is None:
@@ -27,11 +28,14 @@ def article_create(request, entrez_id):
             'titles': titles,
             'title': title,
             'entrez': entrez_id}
-
+    pprint(vals)
     if request.method == 'POST':
+        print('This method is ' + str(request.method))
+       
         # Only assign this 'title' var internally if the online article status is False (not a Wikipedia page)
         uploadopt = request.POST.get('page_type')
         if uploadopt is None:
+            print('uploadopt')
             return HttpResponse('Must select title option.')
 
         title = titles[uploadopt][0] if titles[uploadopt][1] is False else None
@@ -42,7 +46,7 @@ def article_create(request, entrez_id):
 
         vals['title'] = title
         content = results['stub']
-
+        print('about to write')
         write(vals['title'],content)
         # create corresponding talk page with appropriate project banners
         talk_title = 'Talk:{0}'.format(title)
@@ -55,6 +59,7 @@ def article_create(request, entrez_id):
         interwiki_link(entrez_id, title)
         # save article again
         write(vals['title'],content)
+        print('maybe just wrote')
         return redirect(article_create, entrez_id)
 
 
@@ -89,8 +94,8 @@ def write(title, text, summary=None):
     '''
         Writes the wikitext representation of the created page to wikipedia
     '''
-    username = wdi_settings.getWikiDataUser()
-    password = wdi_settings.getWikiDataPassword()
+    username = pbb_secret.username
+    password = pbb_secret.password
     site = mwclient.Site(('https', 'en.wikipedia.org'))
     site.login(username, password)
     page = site.Pages[title]
