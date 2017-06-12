@@ -21,8 +21,7 @@ This repo contains a reusable module for reading from and writing to Wikidata
 ### wikidatasparqlexamples
 Example SPARQL queries that demonstrate integrative potential of Wikidata
 
-* https://github.com/SuLab/wikidatasparqlexamples
-
+* https://www.wikidata.org/wiki/User:ProteinBoxBot/SPARQL_Examples
 
 ### wikigenomes.org and Chlambase
 Web application for viewing and annotating microbial genome data in Wikidata
