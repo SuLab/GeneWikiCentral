@@ -30,7 +30,7 @@ Web application for viewing and annotating microbial genome data in Wikidata
 * https://github.com/SuLab/WikiGenomes.org
 * https://github.com/SuLab/ChlamBase.org
 
-### ShEx-wikidata
+### Genewiki-ShEx
 Shape Expressions for validating wikidata data models
 
-* https://github.com/SuLab/ShEx-Wikidata
+* https://github.com/SuLab/Genewiki-ShEx
