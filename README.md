@@ -1,6 +1,6 @@
 # GeneWikiCentral
 GeneWiki Organization
-
+Project Page: https://www.wikidata.org/wiki/Wikidata:WikiProject_Gene_Wiki
 
 ## Relevant Repos
 ### Scheduled Bots
