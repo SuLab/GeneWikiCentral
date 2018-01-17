@@ -134,7 +134,8 @@ def create(entrez, force=False):
         results['titles'] = titles
 
         # Generate the Stub code if the Page (for any of the possible names) isn't on Wikipedia
-        if not (titles['name'][1] or titles['symbol'][1] or titles['altsym'][1]) or force:
+        # i.e. if any of these values are False (where False means an article with that name DOESN'T exist on wikipedia)
+        if force or any(titles[x][1] is False for x in ['name', 'symbol', 'altsym']):
             results['stub'] = create_stub(entrez)
         
         return results
