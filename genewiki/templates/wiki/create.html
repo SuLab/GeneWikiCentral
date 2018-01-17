@@ -51,10 +51,10 @@
                                     <div class="radio">
                                         <label>
                                         {% if titles.altsym.1 %}
-                                            <input type="radio" name="page_type" value="symbol" disabled="true">
+                                            <input type="radio" name="page_type" value="altsym" disabled="true">
                                             <p><strong>Alternate title:</strong> <a href='http://en.wikipedia.org/wiki/{{titles.altsym.0}}' target='_blank'>{{titles.altsym.0}}</a> <strong class='bg-success'>Exists</strong></p>
                                         {% else %}
-                                            <input type="radio" name="page_type" value="symbol">
+                                            <input type="radio" name="page_type" value="altsym">
                                             <p><strong>Alternate title:</strong> {{titles.altsym.0}}<strong class='bg-warning'>Missing</strong></p>
                                         {% endif %}
                                         </label>
