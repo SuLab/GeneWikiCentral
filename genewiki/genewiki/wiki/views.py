@@ -1,16 +1,17 @@
-from django.shortcuts import render, redirect
-from django.views.decorators.http import require_http_methods
-from django.http import HttpResponse
-from django.conf import settings
+import traceback
+import urllib.parse
 from pprint import pprint
+
+import mwclient
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from django.views.decorators.clickjacking import xframe_options_exempt
+from django.views.decorators.http import require_http_methods
+from wikidataintegrator import wdi_core
 
-
-from genewiki.wiki.textutils import create, interwiki_link
 from genewiki import pbb_secret
-import urllib.parse, mwclient
+from genewiki.wiki.textutils import create, interwiki_link
 
-from wikidataintegrator import wdi_core, wdi_login, wdi_helpers, wdi_settings
 
 @require_http_methods(['GET', 'POST'])
 @xframe_options_exempt
@@ -24,16 +25,17 @@ def article_create(request, entrez_id):
     title = wiki_title(entrez_id)
 
     vals = {'results': results,
-            #'article': article,
+            # 'article': article,
             'titles': titles,
             'title': title,
             'entrez': entrez_id}
     pprint(vals)
     if request.method == 'POST':
         print('This method is ' + str(request.method))
-       
+
         # Only assign this 'title' var internally if the online article status is False (not a Wikipedia page)
         uploadopt = request.POST.get('page_type')
+        print("uploadopt: {}".format(uploadopt))
         if uploadopt is None:
             print('uploadopt')
             return HttpResponse('Must select title option.')
@@ -47,7 +49,7 @@ def article_create(request, entrez_id):
         vals['title'] = title
         content = results['stub']
         print('about to write')
-        write(vals['title'],content)
+        write(vals['title'], content)
         # create corresponding talk page with appropriate project banners
         talk_title = 'Talk:{0}'.format(title)
         talk_content = """{{WikiProjectBannerShell|
@@ -58,10 +60,9 @@ def article_create(request, entrez_id):
         # create interwiki link
         interwiki_link(entrez_id, title)
         # save article again
-        write(vals['title'],content)
+        write(vals['title'], content)
         print('maybe just wrote')
         return redirect(article_create, entrez_id)
-
 
     return render(request, 'wiki/create.html', vals)
 
@@ -79,7 +80,7 @@ def wiki_title(entrez_id):
         }
         limit 1
     """
-    wikidata_results = wdi_core.WDItemEngine.execute_sparql_query(prefix=settings.PREFIX, query=article_query)['results']['bindings']
+    wikidata_results = wdi_core.WDItemEngine.execute_sparql_query(article_query)['results']['bindings']
     article = ''
     for x in wikidata_results:
         article = x['article']['value']
@@ -90,10 +91,11 @@ def wiki_title(entrez_id):
             str_title = urllib.parse.unquote(title[-1])
             return str_title
 
+
 def write(title, text, summary=None):
-    '''
+    """
         Writes the wikitext representation of the created page to wikipedia
-    '''
+    """
     username = pbb_secret.username
     password = pbb_secret.password
     site = mwclient.Site(('https', 'en.wikipedia.org'))
@@ -103,5 +105,8 @@ def write(title, text, summary=None):
     try:
         result = page.save(text, summary, minor=True)
 
-    except MwClientError:
-        client.captureException
+    except mwclient.MwClientError as e:
+        # what is this supposed to be???
+        # client.captureException
+        print(e)
+        traceback.print_exc()
