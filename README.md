@@ -36,7 +36,6 @@ Shape Expressions for validating wikidata data models
 * https://github.com/SuLab/Genewiki-ShEx
 
 ### wikibase-jenkins
-https://github.com/SuLab/wikibase-jenkins
-**Jenkins Wikibase Bot Scheduling System**
+Jenkins Wikibase Bot Scheduling System: This docker image contains an example Jenkins setup with a Bot Trigger and a Bot, used for scheduling bot runs on Wikidata.
 
-This docker image contains an example Jenkins setup with a Bot Trigger and a Bot, used for scheduling bot runs on Wikidata.
+* https://github.com/SuLab/wikibase-jenkins
