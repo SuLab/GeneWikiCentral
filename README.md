@@ -37,4 +37,6 @@ Shape Expressions for validating wikidata data models
 
 ### wikibase-jenkins
 https://github.com/SuLab/wikibase-jenkins
-Jenkins Wikibase Bot Scheduling System. This docker image contains an example Jenkins setup with a Bot Trigger and a Bot, used for scheduling bot runs on Wikidata.
+**Jenkins Wikibase Bot Scheduling System**
+
+This docker image contains an example Jenkins setup with a Bot Trigger and a Bot, used for scheduling bot runs on Wikidata.
