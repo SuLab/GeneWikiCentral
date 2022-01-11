@@ -51,6 +51,6 @@ sudo /etc/init.d/nginx restart
 
 sudo fuser -k 8001/tcp
 
-uwsgi --socket :8001 --module genewiki.wsgi
+uwsgi --socket :8001 --module genewiki.wsgi --processes 4
 
 
