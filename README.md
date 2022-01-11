@@ -34,3 +34,18 @@ Web application for viewing and annotating microbial genome data in Wikidata
 Shape Expressions for validating wikidata data models
 
 * https://github.com/SuLab/Genewiki-ShEx
+
+### wikibase-jenkins
+Jenkins Wikibase Bot Scheduling System: This docker image contains an example Jenkins setup with a Bot Trigger and a Bot, used for scheduling bot runs on Wikidata.
+
+* https://github.com/SuLab/wikibase-jenkins
+
+### wikibase-tools
+library to create local wikibase instance (for creating, for example, a CC-BY version of wikidata)
+
+* https://github.com/SuLab/wikibase-tools
+
+### genewikiworld
+library to create class-level diagrams like https://www.wikidata.org/wiki/Wikidata:WikiProject_Gene_Wiki#/media/File:Gene_wiki_world_network.png
+
+* https://github.com/SuLab/genewikiworld
