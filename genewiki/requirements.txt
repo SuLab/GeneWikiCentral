@@ -18,7 +18,7 @@ gnureadline==6.3.3
 gunicorn==19.7.1
 html5lib==0.999999999
 httplib2==0.10.3
-ipython==5.3.0
+ipython==7.16.3
 ipython-genutils==0.2.0
 isodate==0.5.4
 keepalive==0.5
